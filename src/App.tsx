@@ -148,7 +148,7 @@ function App() {
 
             <a
               className="button button-secondary"
-              href="/Daniel_Jeon_Resume_Software_Engineer.pdf"
+              href={`${import.meta.env.BASE_URL}Daniel_Jeon_Resume_Software_Engineer.pdf`}
               target="_blank"
               rel="noreferrer"
             >
@@ -170,7 +170,7 @@ function App() {
         >
           <div className="portrait-frame">
             <img
-              src="/daniel_headshot.png"
+              src={`${import.meta.env.BASE_URL}daniel_headshot.png`}
               alt="Professional headshot of Daniel Jeon"
               onError={(event) => {
                 event.currentTarget.style.display = "none";
